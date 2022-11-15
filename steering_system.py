@@ -1,4 +1,4 @@
-from steer_direction import SteerDirection
+from enum_steer_direction import SteerDirection
 
 
 class SteeringSystem:

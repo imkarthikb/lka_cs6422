@@ -21,10 +21,10 @@ class Data:
         final_list = []
         finaldata_list = []
 
-        default_lcpath = "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lane_coordinates.csv"
-        default_speedpath = "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lka_status.csv"
-        default_steerpath = "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/steering_override.csv"
-        default_lkapath = "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/vehicle_speed.csv"
+        default_lcpath = "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lane_coordinates.csv"
+        default_speedpath = "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lka_status.csv"
+        default_steerpath = "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/steering_override.csv"
+        default_lkapath = "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/vehicle_speed.csv"
 
         lc_patha = lc_patha if (lc_patha is not None ) and (lc_patha != "") else default_lcpath
         speed_path = speed_path if (speed_path is not None ) and (speed_path != "") else default_speedpath
@@ -59,14 +59,6 @@ class Data:
 
         return finaldata_list
 
-    if __name__ == "__main__":
-        data = get_data("/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lane_coordinates.csv",
-        "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/vehicle_speed.csv",
-        "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lka_status.csv",
-        "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/steering_override.csv")
-
-        for data_item in data:
-            print(data_item.lka_onoff) 
             
     
         

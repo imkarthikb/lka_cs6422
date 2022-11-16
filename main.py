@@ -12,9 +12,9 @@ if __name__ == "__main__":
     data = Data()
 
     alldata = data.get_data("",
-        "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/vehicle_speed.csv",
-        "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lka_status.csv",
-        "/home/amitsrivatsa/OneDrive/Desktop/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/steering_override.csv")
+        "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/vehicle_speed.csv",
+        "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lka_status.csv",
+        "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/steering_override.csv")
         
     for data_item in alldata:
         print("x1:",data_item.x1)

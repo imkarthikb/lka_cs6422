@@ -1,26 +1,44 @@
-from steering_system import SteeringSystem
-from alert_system import AlertSystem
-from data_main import Data
-import csv
+# from steering_system import SteeringSystem
+# from alert_system import AlertSystem
+# from data_main import Data
+from data.data_model import DataModel
+# from enum_steer_direction import SteerDirection
+# from models.steer_model import SteeringModel
+# import csv
+# import time
 
 
 def main():
-    steering_system = SteeringSystem()
-    alert_system = AlertSystem()
+    pass
+    # DataModel(10, 20, 40, 0, 1)
+    # initial
+    # curr_steering_state = SteeringModel(SteerDirection.CENTER, 0)
+    # curr_lane_state = DataModel(26, 76, 40, 0, 1)
+
+    # while(True):
+    #     # get random steer override
+
+    #     # get random speed
+
+    #     # get random on_off
+
+    #     # get next lane coordinates
+    #     curr_lane_state = get_data(curr_steering_state, curr_lane_state)
+
+    #     # process the inputs and calculate steer angle
+    #     # curr_steering_state = calculate_steer_angle(curr_lane_state)
+
+    #     # alerts take decisions
+
+    #     time.sleep(1)
+
+
+# def get_data(steer_wheel_direction: SteeringModel, current_state: DataModel) -> DataModel:
+#     if steer_wheel_direction.direction == SteerDirection.CENTER and steer_wheel_direction.angle == 0:
+#         return current_state
+#     elif steer_wheel_direction.direction == SteerDirection.RIGHT and steer_wheel_direction.angle == 30:
+#         return current_state
+
 
 if __name__ == "__main__":
-    data = Data()
-
-    alldata = data.get_data("",
-        "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/vehicle_speed.csv",
-        "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/lka_status.csv",
-        "/home/amitsrivatsa/Assignments/CS6422 - Complex systems/LKM/cs6422_team3_LKA/data/steering_override.csv")
-        
-    for data_item in alldata:
-        print("x1:",data_item.x1)
-        print("x2:",data_item.x2)
-        print("Speed:",data_item.speed)
-        print("Lka_status:",data_item.lka_onoff)
-        print("Steering_override_status:",data_item.steering_override)
-
     main()

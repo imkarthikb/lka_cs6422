@@ -1,8 +1,9 @@
 from enum_steering_override import SteeringOveride
 from enum_lka_status import LkaStatus
 
-class DataModel:
-    def __init__(self,x1:float,x2:float,speed:float,steering_override:SteeringOveride,lka_onoff:LkaStatus) -> None:
+
+class LaneModel:
+    def __init__(self, speed: float, steering_override: SteeringOveride, lka_onoff: LkaStatus) -> None:
         self.x1 = x1
         self.x2 = x2
         self.speed = speed

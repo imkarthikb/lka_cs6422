@@ -1,7 +1,6 @@
-import enum
+from enum import Enum
 
 
-class SteeringOveride(enum.Enum):
+class SteeringOveride(Enum):
     YES = 1
     NO = 0
-    ValueError: 3
